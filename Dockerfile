@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-alpine
+FROM wodby/openjdk:17-alpine
 EXPOSE 8082
 #ajouter le livrable .jar  dans l image
 ADD localhost:8081/repository/maven-releases/tn/m104/rh/school/1.0.0/school-1.0.0.jar .
