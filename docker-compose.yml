@@ -28,11 +28,11 @@ services:
     tty: true
     
   app-school-fe:
-  	image: rezguimarwene/school-image-fe:1.0.0
-  	restart: on-failure
-  	ports:
-  	 - "8585:85"
-  	depends_on:
-  	 - app-backend
+    image: rezguimarwene/school-image-fe:1.0.0
+    restart: on-failure
+    ports:
+      - "8585:85"
+    depends_on:
+      - app-backend
 volumes:
   db :
